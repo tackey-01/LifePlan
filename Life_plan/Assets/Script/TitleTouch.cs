@@ -20,7 +20,7 @@ public class TitleTouch : MonoBehaviour {
         {
             
             Debug.Log("PC");
-
+            
             return;
 
         }
@@ -30,7 +30,10 @@ public class TitleTouch : MonoBehaviour {
         return;
     }
 #endif
-
+        if (!GameObject.Find("Canvas").gameObject.GetComponent<CanvasGroup>().interactable)
+        {
+            return;
+        }
         switch (info)
         {
             case TouchInfo.Began:

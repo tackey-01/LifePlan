@@ -336,6 +336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288b90cb225b9db4da75c2400bf477a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
 --- !u!1 &259691326
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +635,7 @@ GameObject:
   - component: {fileID: 556997325}
   - component: {fileID: 556997324}
   - component: {fileID: 556997326}
+  - component: {fileID: 556997327}
   m_Layer: 5
   m_Name: ContractPanel
   m_TagString: Untagged
@@ -726,6 +728,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!225 &556997327
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556997322}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 1
 --- !u!1 &572870020
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,6 +749,7 @@ GameObject:
   - component: {fileID: 572870023}
   - component: {fileID: 572870022}
   - component: {fileID: 572870021}
+  - component: {fileID: 572870024}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -788,6 +802,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &572870024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572870020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e86b4ac17ae1d4681e5f150658bbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &624243813
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +1014,7 @@ GameObject:
   - component: {fileID: 1094585202}
   - component: {fileID: 1094585201}
   - component: {fileID: 1094585200}
+  - component: {fileID: 1094585205}
   - component: {fileID: 1094585204}
   m_Layer: 5
   m_Name: Canvas
@@ -1088,6 +1114,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1167b739153ce0647b293abd7cfa944f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &1094585205
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1094585199}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1209037646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,6 +1429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288b90cb225b9db4da75c2400bf477a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
 --- !u!1 &2134250425
 GameObject:
   m_ObjectHideFlags: 0
