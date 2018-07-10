@@ -18,4 +18,9 @@ public class ButtonController : MonoBehaviour
         mainCanvas = GameObject.Find("Canvas").gameObject.GetComponent<CanvasGroup>();
         mainCanvas.interactable = true;
     }
+    
+    public void TitleReturn()
+    {
+        SceneManager.LoadScene("TitleScene");
+    }
 }
