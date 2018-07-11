@@ -526,11 +526,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 2
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 2
-    m_MaxSize: 50
+    m_MinSize: 60
+    m_MaxSize: 100
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1061,6 +1061,7 @@ RectTransform:
   - {fileID: 1054644947}
   - {fileID: 831009324}
   - {fileID: 530092114}
+  - {fileID: 1963598941}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1838,6 +1839,7 @@ GameObject:
   - component: {fileID: 407215916}
   - component: {fileID: 407215915}
   - component: {fileID: 407215914}
+  - component: {fileID: 407215917}
   m_Layer: 5
   m_Name: LuckDownButton
   m_TagString: Untagged
@@ -1901,7 +1903,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 407215915}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &407215915
@@ -1937,6 +1950,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 407215912}
+--- !u!114 &407215917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407215912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288b90cb225b9db4da75c2400bf477a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
+  flagName: ItemPopPanel
 --- !u!1 &446272681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,7 +2633,7 @@ GameObject:
   - component: {fileID: 668529461}
   - component: {fileID: 668529460}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: ItemReturnButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3056,6 +3082,7 @@ GameObject:
   - component: {fileID: 821378503}
   - component: {fileID: 821378502}
   - component: {fileID: 821378501}
+  - component: {fileID: 821378504}
   m_Layer: 5
   m_Name: SociabilityDownButton
   m_TagString: Untagged
@@ -3119,7 +3146,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 821378502}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &821378502
@@ -3155,6 +3193,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 821378499}
+--- !u!114 &821378504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 821378499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288b90cb225b9db4da75c2400bf477a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
+  flagName: ItemPopPanel
 --- !u!1 &829460320
 GameObject:
   m_ObjectHideFlags: 0
@@ -3588,6 +3639,7 @@ GameObject:
   - component: {fileID: 911079913}
   - component: {fileID: 911079912}
   - component: {fileID: 911079911}
+  - component: {fileID: 911079914}
   m_Layer: 5
   m_Name: IntellectDownButton
   m_TagString: Untagged
@@ -3651,7 +3703,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 911079912}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &911079912
@@ -3687,6 +3750,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 911079909}
+--- !u!114 &911079914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911079909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288b90cb225b9db4da75c2400bf477a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
+  flagName: ItemPopPanel
 --- !u!1 &929615777
 GameObject:
   m_ObjectHideFlags: 0
@@ -4305,6 +4381,7 @@ GameObject:
   - component: {fileID: 1027460121}
   - component: {fileID: 1027460120}
   - component: {fileID: 1027460119}
+  - component: {fileID: 1027460122}
   m_Layer: 5
   m_Name: StrengthUpButton
   m_TagString: Untagged
@@ -4368,7 +4445,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1027460120}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1027460122}
+        m_MethodName: ItemUsePopUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1027460120
@@ -4404,6 +4492,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1027460117}
+--- !u!114 &1027460122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1027460117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288b90cb225b9db4da75c2400bf477a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
+  flagName: ItemPopPanel
 --- !u!1 &1051804907
 GameObject:
   m_ObjectHideFlags: 0
@@ -4415,6 +4516,7 @@ GameObject:
   - component: {fileID: 1051804911}
   - component: {fileID: 1051804910}
   - component: {fileID: 1051804909}
+  - component: {fileID: 1051804912}
   m_Layer: 5
   m_Name: LuckUpButton
   m_TagString: Untagged
@@ -4478,7 +4580,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1051804910}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1051804910
@@ -4514,6 +4627,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1051804907}
+--- !u!114 &1051804912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051804907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288b90cb225b9db4da75c2400bf477a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
+  flagName: ItemPopPanel
 --- !u!1 &1054644946
 GameObject:
   m_ObjectHideFlags: 0
@@ -4843,6 +4969,7 @@ GameObject:
   - component: {fileID: 1221198241}
   - component: {fileID: 1221198240}
   - component: {fileID: 1221198239}
+  - component: {fileID: 1221198242}
   m_Layer: 5
   m_Name: SociabilityUpButton
   m_TagString: Untagged
@@ -4906,7 +5033,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1221198240}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1221198240
@@ -4942,6 +5080,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1221198237}
+--- !u!114 &1221198242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1221198237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288b90cb225b9db4da75c2400bf477a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
+  flagName: ItemPopPanel
 --- !u!1 &1292065049
 GameObject:
   m_ObjectHideFlags: 0
@@ -5931,7 +6082,7 @@ GameObject:
   - component: {fileID: 1606313762}
   - component: {fileID: 1606313761}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ItemUseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6279,6 +6430,7 @@ GameObject:
   - component: {fileID: 1681644193}
   - component: {fileID: 1681644192}
   - component: {fileID: 1681644191}
+  - component: {fileID: 1681644194}
   m_Layer: 5
   m_Name: IntellectUpButton
   m_TagString: Untagged
@@ -6342,7 +6494,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1681644192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1681644192
@@ -6378,6 +6541,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1681644189}
+--- !u!114 &1681644194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1681644189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288b90cb225b9db4da75c2400bf477a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
+  flagName: ItemPopPanel
 --- !u!1 &1697433672
 GameObject:
   m_ObjectHideFlags: 0
@@ -6389,6 +6565,7 @@ GameObject:
   - component: {fileID: 1697433676}
   - component: {fileID: 1697433675}
   - component: {fileID: 1697433674}
+  - component: {fileID: 1697433677}
   m_Layer: 5
   m_Name: StrengthDownButton
   m_TagString: Untagged
@@ -6452,7 +6629,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1697433675}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1697433677}
+        m_MethodName: ItemUsePopUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1697433675
@@ -6488,6 +6676,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1697433672}
+--- !u!114 &1697433677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1697433672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288b90cb225b9db4da75c2400bf477a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
+  flagName: ItemPopPanel
 --- !u!1 &1713383996
 GameObject:
   m_ObjectHideFlags: 0
@@ -7080,6 +7281,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1926976811}
+--- !u!1 &1963598940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1963598941}
+  - component: {fileID: 1963598942}
+  m_Layer: 5
+  m_Name: Status
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1963598941
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1963598940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 197207851}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1963598942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1963598940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efece703efbc3e4081565892d239119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  r_TimeTriger: {fileID: 0}
+  r_Aeg: {fileID: 0}
+  r_TimeCont: {fileID: 0}
 --- !u!1 &1985511504
 GameObject:
   m_ObjectHideFlags: 0

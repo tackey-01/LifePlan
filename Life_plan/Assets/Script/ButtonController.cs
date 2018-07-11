@@ -46,6 +46,7 @@ public class ButtonController : MonoBehaviour
         {
             return;
         }
+
         GameObject.Find("Canvas").transform.Find("CharacterCanvas").transform.Find("MenuPanel").gameObject.SetActive(false);
         GameObject.Find("Canvas").transform.Find("CharacterCanvas").transform.Find("Menubutton").gameObject.SetActive(true);
         Gameobj.SetActive(true);
@@ -67,10 +68,44 @@ public class ButtonController : MonoBehaviour
         {
             return;
         }
-
+        Debug.Log(GameObject.Find("Canvas/ItemPanel/ItemPopPanel").gameObject.activeInHierarchy);
+        if (GameObject.Find("Canvas/ItemPanel/ItemPopPanel").gameObject.activeInHierarchy)
+        {
+            GameObject.Find("Canvas/ItemPanel/ItemPopPanel").gameObject.SetActive(false);
+        }
+        if(!GameObject.Find("Canvas/ItemPanel/ItemListPanel").gameObject.activeInHierarchy)
+        {
+            GameObject.Find("Canvas/ItemPanel/ItemListPanel").gameObject.SetActive(true);
+        }
         Gameobj.SetActive(false);
+        
         mainCanvas = GameObject.Find("Canvas").gameObject.GetComponent<CanvasGroup>();
         mainCanvas.interactable = true;
     }
-    
+
+    // Item Use
+    public void ItemUsePopUp()
+    {
+
+        Gameobj = GameObject.Find("Canvas/ItemPanel/ItemPopPanel").gameObject;
+        Gameobj.SetActive(true);
+        GameObject.Find("Canvas/ItemPanel/ItemListPanel").gameObject.SetActive(false);
+
+        switch(flagName)
+        {
+            case "StrengthUp":
+                break;
+        }
+
+        if (flagName == null)
+        {
+            return;
+        }
+
+
+        if (Gameobj == null)
+        {
+            return;
+        }
+    }
 }
